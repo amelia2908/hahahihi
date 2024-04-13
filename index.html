@@ -99,6 +99,7 @@
             <button
               class="btn btn-outline-success"
               type="submit"
+              onclick="notify()"
             >
               Search
             </button>
@@ -395,6 +396,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -422,6 +424,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -449,6 +452,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -475,6 +479,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -499,6 +504,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -523,6 +529,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -550,6 +557,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -576,6 +584,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -600,6 +609,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -628,6 +638,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -656,6 +667,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -683,6 +695,7 @@
               <button
                 class="btn btn-secondary w-100 rounded-5"
                 type="button"
+                onclick="notify()"
               >
                 <i class="fa-solid fa-cart-shopping"></i>
                 Thêm
@@ -931,9 +944,28 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      function notify() {
+        Swal.fire({
+          title: "Thông báo!",
+          text: "Chức năng đang được phát triển!",
+          icon: "info",
+          confirmButtonText: "OK",
+          width: 600,
+          padding: "3em",
+          color: "#716add",
+          background: "#fff url(/images/trees.png)",
+          backdrop: `
+    rgba(0,0,123,0.4)
+    url("https://sweetalert2.github.io/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `,
+        });
+      }
     </script>
   </body>
 </html>
